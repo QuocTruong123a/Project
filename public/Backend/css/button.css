@@ -1,0 +1,15 @@
+.button1 {
+    position: absolute;
+    top: 600px;
+    left: 30px;
+    width: 160px;
+    color: orange;
+    background-color: #FFF2E7;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav :is(:link, :active, :visited).active {
+    color: #fff;
+    background: #FF7506;
+}

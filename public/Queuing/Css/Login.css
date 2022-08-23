@@ -28,6 +28,22 @@
     bottom: 8.31%;
 }
 
+.showspan1 {
+    position: absolute;
+    left: 34.15%;
+    right: 8.31%;
+    top: 49%;
+    bottom: 8.31%;
+}
+
+.showspan2 {
+    position: absolute;
+    left: 34.15%;
+    right: 8.31%;
+    top: 66%;
+    bottom: 8.31%;
+}
+
 .text1 {
     position: absolute;
     left: 70.15%;
@@ -61,4 +77,32 @@
     Height: 450px;
     top: 80px;
     left: 600px;
+}
+
+.img3 {
+    position: absolute;
+    Width: 500px;
+    Height: 460px;
+    top: 32px;
+    left: 660px;
+}
+
+.hidden {
+    display: none;
+}
+
+form #showEye {
+    display: block;
+}
+
+form #hideEye {
+    display: none;
+}
+
+form #showEye1 {
+    display: block;
+}
+
+form #hideEye1 {
+    display: none;
 }

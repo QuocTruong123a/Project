@@ -1,0 +1,79 @@
+/* Video Explanatio - https://youtu.be/-0VuZEYIYuI */
+
+body {
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 25px;
+    position: absolute;
+    left: 760px;
+    top: 0%;
+}
+
+.custom-select select {
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    position: absolute;
+    left: -63px;
+    top: -22%;
+    width: 100px;
+}
+
+.custom-select::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.custom-select .selector-options {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background: #feffff;
+    color: black;
+    border-radius: 4px;
+    z-index: 1;
+    width: 100px;
+    position: absolute;
+    left: -62px;
+    top: 114%;
+}
+
+.custom-select .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.custom-select .selector-options li:hover {
+    background: #FFF2E7;
+}

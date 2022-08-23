@@ -1,0 +1,79 @@
+/* Video Explanatio - https://youtu.be/-0VuZEYIYuI */
+
+body {
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.custom-select1 {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 25px;
+    position: absolute;
+    left: 1130px;
+    top: 22%;
+}
+
+.custom-select1 select {
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    border: 2px solid #D4D4D7;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: -39px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    position: absolute;
+    left: -541px;
+    top: -22%;
+    width: 540px;
+}
+
+.custom-select1::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.custom-select1 .selector-options {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background: #feffff;
+    color: black;
+    border-radius: 4px;
+    z-index: 1;
+    width: 532px;
+    position: absolute;
+    left: -537px;
+    top: 5px;
+}
+
+.custom-select1 .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.custom-select1 .selector-options li:hover {
+    background: #FFF2E7;
+}

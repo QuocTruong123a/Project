@@ -1,0 +1,22 @@
+.img1 {
+    height: 100px;
+    width: 100px;
+}
+
+.img2 {
+    position: absolute;
+    top: 600px;
+    left: 30px;
+}
+
+.img3 {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+
+.img4 {
+    position: absolute;
+    top: 800px;
+    left: 100px;
+}

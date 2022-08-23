@@ -1,0 +1,61 @@
+.gird {
+    position: absolute;
+    width: 700px;
+    height: 283px;
+    left: 284px;
+    top: 17px;
+}
+
+.gird1 {
+    position: absolute;
+    width: 350px;
+    height: 283px;
+    left: 1px;
+    top: 0px;
+}
+
+.gird2 {
+    position: absolute;
+    width: 350px;
+    height: 283px;
+    left: 352px;
+    top: 0px;
+}
+
+.space {
+    width: 305px;
+    height: 283px;
+}
+
+.gird3 {
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 30px;
+    top: 40px;
+    background: #EAEAEC;
+    ;
+    border-radius: 5px;
+}
+
+.gird4 {
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 30px;
+    top: 140px;
+    background: #EAEAEC;
+    ;
+    border-radius: 5px;
+}
+
+.gird5 {
+    position: absolute;
+    width: 300px;
+    height: 34px;
+    left: 30px;
+    top: 240px;
+    background: #EAEAEC;
+    ;
+    border-radius: 5px;
+}
