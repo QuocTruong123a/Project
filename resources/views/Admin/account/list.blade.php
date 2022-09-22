@@ -1,25 +1,18 @@
 @extends('Admin.Main')
 @section('content')
 <div class="content-wrapper bg-secondary">
-<p class="text23">Danh sách thiết bị</p>
-<p class="text24">Trạng thái hoạt động</p>
-<label class="custom-select2"style=" left: 739px; top:26.5%">
-    <select name="sample" class="dropdown1" style=" left: -500px; top:0px; width:295px">
+<p class="text23">Danh sách tài khoản</p>
+<p class="text24">Tên vài trò</p>
+<label class="custom-select2"style=" left: 534px; top:26.5%">
+    <select name="sample" class="dropdown1" style=" left: -294px; top:0px; width:295px">
         <option class="" value="">Tất cả</option>
         <option class="" value="Kiosk">Kiosk</option>
         <option value="Display counter">Display counter</option>
     </select>
 </label>
   <img class="imgdrop1" src="img/fi_chevron-down.png" alt="">
-<p class="text25">Trạng thái Kết nối</p>
-<label class="custom-select2"style=" left: 866px; top:26.5%">
-    <select name="sample" class="dropdown1" style=" left: -300px; top:0px; width:300px">
-        <option class="" value="">Tất cả</option>
-        <option class="" value="Kiosk">Kiosk</option>
-        <option value="Display counter">Display counter</option>
-    </select>
-</label>
-  <img class="imgdrop2" src="img/fi_chevron-down.png" alt="">
+
+
   <p class="text26">Từ khóa</p>
   <input class="inputdevice" placeholder="Nhâp từ khóa">
   <img class="imgsearch_device" src="img/fi_search.png" alt="">
@@ -27,18 +20,17 @@
     <a href="{{ route('device.add') }} ">
         <img class="imgbtnaddevice" src="img/add-square.png" alt="">
     </a>
-    <p class="text28">Thêm thiêt bị</p>
+    <p class="text28">Thêm tài khoản</p>
   </button>
   <div class="girdevice">
     <table class="tabledevice w3-table-all " >
         <tr  class="th w3-light-grey">
-          <th>Mã thiêt bị</th>
-          <th>Tên thiết bị</th>
-          <th>Địa chỉ IP</th>
-          <th class="th">  Trạng thái hoạt động</th>
-          <th class="th">Trạng thái kết nội</th>
-          <th>Dịch vụ sử dụng</th>
-          <th> </th>
+          <th>Tên đăng nhập</th>
+          <th>Họ tên</th>
+          <th>Số điện thoại</th>
+          <th class="">Email</th>
+          <th class="">Vai trò</th>
+          <th>Trâng thái</th>
           <th> </th>
         </tr>
 
@@ -55,7 +47,7 @@
           @endphp
           @if($test == 'Ngưng hoạt động')
           <td>
-            <li><span>Ngưng hoạt động</span></li>
+            <li><span>Mất kết nối</span></li>
          </td>
           @elseif ($test == 'Hoạt động')
           <td>
@@ -75,7 +67,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="{{ route('device.detail') }}">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
         </tr>
         <tr>
             <td>KIO_01</td>
@@ -86,7 +78,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
         </tr>
         <tr>
             <td>KIO_01</td>
@@ -97,7 +89,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
         </tr>
         <tr>
             <td>KIO_01</td>
@@ -108,7 +100,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
           </tr>
           <tr>
             <td>KIO_01</td>
@@ -119,7 +111,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
           </tr>
           <tr>
             <td>KIO_01</td>
@@ -130,7 +122,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
           </tr>
           <tr>
             <td>KIO_01</td>
@@ -141,7 +133,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
           </tr>
           <tr>
             <td>KIO_01</td>
@@ -152,7 +144,7 @@
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
           <td><a href="/">Chi tiết</a></td>
-          <td><a href="/">Cập nhật</a></td>
+
           </tr>
 
       </table>

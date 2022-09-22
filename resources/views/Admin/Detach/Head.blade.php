@@ -3,7 +3,7 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <title>Admin</title>
     <base href="{{ asset('') }}">
     <link rel="stylesheet" href="Backend/node_modules/font-awesome/css/font-awesome.min.css" />
@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="Backend/css/personal.css" />
     <link rel="stylesheet" href="Backend/css/dashboard.css" />
     <link rel="stylesheet" href="Backend/js/chartjs.js" />
-
+    <link rel="stylesheet" href="Backend/css/role.css" />
+    <link rel="stylesheet" href="Backend/css/account.css" />
+    <link rel="stylesheet" href="Backend/css/user.css" />
+    
     <link rel="stylesheet" href="Calendar/dist/simple-calendar.css">
     <link rel="stylesheet" href="Calendar/assets/demo.css">
 
@@ -27,4 +30,7 @@
 
     <link rel="stylesheet" href="Backend/css/option/select.css" />
     <link rel="stylesheet" href="Backend/css/service.css" />
+    <link rel="stylesheet" href="Backend/css/option1/text.css" />
+    <link rel="stylesheet" href="Backend/css/number.css" />
+    <link rel="stylesheet" href="Backend/css/report.css" />
   </head>

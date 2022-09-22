@@ -1,0 +1,24 @@
+.girdrole {
+    position: absolute;
+    width: 1136px;
+    height: 436px;
+    left: 240px;
+    top: 165px;
+}
+
+.btnrole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    gap: 4px;
+    position: absolute;
+    width: 71px;
+    height: 85px;
+    left: 1457px;
+    top: 165px;
+    border: 0;
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #e7e9f2;
+}

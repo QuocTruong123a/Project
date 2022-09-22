@@ -1,25 +1,302 @@
-.service_date_first {
-    position: absolute;
-    width: 300px;
-    height: 44px;
-    left: 570px;
-    top: 184px;
-}
+    .service_date_first {
+        position: absolute;
+        width: 300px;
+        height: 44px;
+        left: 570px;
+        top: 184px;
+    }
 
-.service_date_hindmost {
-    position: absolute;
-    width: 300px;
-    height: 44px;
-    left: 755px;
-    top: 184px;
-    -webkit-appearance: none;
-}
+    .service_date_hindmost {
+        position: absolute;
+        width: 300px;
+        height: 44px;
+        left: 755px;
+        top: 184px;
+        -webkit-appearance: none;
+    }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url(../images/calendar.png) no-repeat;
-    width: 20px;
-    height: 20px;
-    border-width: thin;
-    position: absolute;
-    margin-left: -10px;
-}
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: url(../images/calendar.png) no-repeat;
+        width: 20px;
+        height: 20px;
+        border-width: thin;
+        position: absolute;
+        margin-left: -10px;
+    }
+
+    .serinputadd {
+        position: absolute;
+        left: 31px;
+        top: 114px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 270px 10px 12px;
+        gap: 10px;
+        width: 553px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 2px solid #D4D4D7;
+        border-radius: 8px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .serinputadd1 {
+        position: absolute;
+        left: 31px;
+        top: 216px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 270px 10px 12px;
+        gap: 10px;
+        width: 553px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 2px solid #D4D4D7;
+        border-radius: 8px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .serinputadd2 {
+        position: absolute;
+        left: 647px;
+        top: 114px;
+        padding: 10px 10px 10px 10px;
+        width: 480px;
+        height: 148px;
+        background: #FFFFFF;
+        border: 2px solid #D4D4D7;
+        border-radius: 8px;
+    }
+
+    .sercheckadd {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 31px;
+        top: 318px;
+        border: 0;
+    }
+
+    .labeladdsrv {
+        display: block;
+        position: relative;
+        width: 23px;
+        height: 22.5px;
+        left: 29.5px;
+        top: 327px;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+        border: 2.5px solid #4277FF;
+        border-radius: 4px;
+    }
+
+    .sercheckadd1 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 31px;
+        top: 369px;
+        border: 0;
+    }
+
+    .labeladdsrv1 {
+        display: block;
+        position: relative;
+        width: 23px;
+        height: 22.5px;
+        left: 29.5px;
+        top: 348px;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+        border: 2.5px solid #4277FF;
+        border-radius: 4px;
+    }
+
+    .sercheckadd2 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 31px;
+        top: 421px;
+        border: 0;
+    }
+
+    .labeladdsrv2 {
+        display: block;
+        position: relative;
+        width: 23px;
+        height: 22.5px;
+        left: 29.5px;
+        top: 370px;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+        border: 2.5px solid #4277FF;
+        border-radius: 4px;
+    }
+
+    .sercheckadd3 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 31px;
+        top: 458px;
+        border: 0;
+    }
+
+    .labeladdsrv3 {
+        display: block;
+        position: relative;
+        width: 23px;
+        height: 22.5px;
+        left: 29.5px;
+        top: 378px;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+        border: 2.5px solid #4277FF;
+        border-radius: 4px;
+    }
+
+    .service_group {
+        position: absolute;
+        width: 370px;
+        height: 525px;
+        left: 240px;
+        top: 172px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgb(232 239 244 / 80%);
+        border-radius: 12px;
+    }
+
+    .service_group1 {
+        position: absolute;
+        width: 718px;
+        height: 525px;
+        left: 640px;
+        top: 172px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgb(232 239 244 / 80%);
+        border-radius: 12px;
+    }
+
+    .service_group2 {
+        position: absolute;
+        width: 384px;
+        height: 482px;
+        left: -225px;
+        top: -152px;
+    }
+
+    .ser_btnhd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        gap: 24px;
+        position: absolute;
+        width: 176px;
+        height: 44px;
+        left: 240px;
+        top: 184px;
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D7;
+        border-radius: 8px;
+    }
+
+    .ser_buthd {
+        position: absolute;
+        width: 145px;
+        height: 36px;
+        left: 2.97px;
+        top: 0px;
+        text-align: left;
+    }
+
+    .imgdrop1_ser {
+        position: absolute;
+        left: 390px;
+        top: 194px;
+    }
+
+    .service_date_first1 {
+        position: absolute;
+        width: 143px;
+        height: 44px;
+        left: 428px;
+        top: 184px;
+        border: 1.5px solid #D4D4D7;
+        border-radius: 8px;
+    }
+
+    .service_date_hindmost1 {
+        position: absolute;
+        width: 143px;
+        height: 44px;
+        left: 576px;
+        top: 184px;
+        border: 2px solid #D4D4D7;
+        border-radius: 8px;
+    }
+
+    .inputser1 {
+        position: absolute;
+        width: 183px;
+        height: 45px;
+        left: 731px;
+        top: 183px;
+        border: 2px solid #D4D4D7;
+    }
+
+    .imgsearch_ser {
+        position: absolute;
+        left: 882px;
+        top: 193px;
+    }
+
+    .ser_update {
+        position: absolute;
+        left: 1454px;
+        top: 183px;
+        width: 80px;
+        height: 94px;
+        background: #FFF2E7;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .img_ser_update {
+        position: absolute;
+        top: 196px;
+        left: 1481px;
+    }
+
+    .ser_turn {
+        position: absolute;
+        left: 1454px;
+        top: 278px;
+        width: 80px;
+        height: 78px;
+        background: #FFF2E7;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .img_ser_turn {
+        position: absolute;
+        top: 285px;
+        left: 1481px;
+    }

@@ -1,12 +1,18 @@
 <?php
 
+use App\Http\Controllers\AccountCotroller;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\deviceController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\numberController;
 use App\Http\Controllers\personalController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use PHPUnit\TextUI\XmlConfiguration\Group;
+use App\Http\Controllers\roleController;
+use App\Http\Controllers\UserCotroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,5 +43,24 @@ Route::prefix('Admin')->group(function(){
     });
     Route::controller(ServiceController::class)->group(function(){
         Route::get('/service','index')->name('service');
+        Route::get('/service/add','create')->name('service.add');
+        Route::get('/service/detail','detail')->name('service.detail');
+    });
+    Route::controller(numberController::class)->group(function(){
+        Route::get('/number','index')->name('number');
+        Route::get('/number/add','create')->name('number.add');
+        Route::get('/number/information','information')->name('number.information');
+    });
+    Route::controller(ReportController::class)->group(function(){
+        Route::get('/Report','index')->name('report');
+    });
+    Route::controller(roleController::class)->group(function(){
+        Route::get('/role','index')->name('role');
+    });
+    Route::controller(AccountCotroller::class)->group(function(){
+        Route::get('/account','index')->name('account');
+    });
+    Route::controller(UserCotroller::class)->group(function(){
+        Route::get('/user','index')->name('user');
     });
 });

@@ -1,0 +1,39 @@
+.report_date_first {
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 62px;
+    top: 184px;
+}
+
+.report_date_first1 {
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 226px;
+    top: 184px;
+}
+
+select {
+    /* border: none;
+    color: #FF9138;
+    background-color: #FF9138; */
+}
+
+select:after {
+    border: none;
+    background: red;
+}
+
+select:before {
+    border: none;
+}
+
+option {
+    color: black;
+}
+
+.nav-item .nav-link:hover {
+    background: #FF9138;
+    margin-left: -10px;
+}

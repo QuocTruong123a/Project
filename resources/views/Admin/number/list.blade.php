@@ -1,30 +1,51 @@
 @extends('Admin.Main')
 @section('content')
-<div class="content-wrapper bg-secondary">
-<p class="text23">Danh sách thiết bị</p>
-<p class="text24">Trạng thái hoạt động</p>
+
+  <div class="content-wrapper bg-secondary">
+<p class="text23">Quản lý cấp số</p>
+<p class="text24">Tên dịch vụ</p>
+<div class=" ">
+    <label class="custom-select2"style=" left: 390px; top:26.5% ">
+        <select name="sample" class="dropdown1" style=" left: -148px; top:0px; width:148px">
+            <option class="" value="">Tất cả</option>
+            <option class="" value="Kiosk">Kiosk</option>
+            <option value="Display counter">Display counter</option>
+        </select>
+    </label>
+  </div>
+  <img class="imgnumber1" src="img/fi_chevron-down.png" alt="">
+<p class="text84">Tình trạng</p>
+<label class="custom-select2"style=" left: 564px; top:26.5%">
+    <select name="sample" class="dropdown1" style=" left: -148px; top:0px; width:148px">
+        <option class="" value="">Tất cả</option>
+        <option class="" value="Kiosk">Kiosk</option>
+        <option value="Display counter">Display counter</option>
+    </select>
+</label>
+<p class="text85">Nguồn cấp</p>
 <label class="custom-select2"style=" left: 739px; top:26.5%">
-    <select name="sample" class="dropdown1" style=" left: -500px; top:0px; width:295px">
+    <select name="sample" class="dropdown1" style=" left: -148px; top:0px; width:148px">
         <option class="" value="">Tất cả</option>
         <option class="" value="Kiosk">Kiosk</option>
         <option value="Display counter">Display counter</option>
     </select>
 </label>
-  <img class="imgdrop1" src="img/fi_chevron-down.png" alt="">
-<p class="text25">Trạng thái Kết nối</p>
-<label class="custom-select2"style=" left: 866px; top:26.5%">
-    <select name="sample" class="dropdown1" style=" left: -300px; top:0px; width:300px">
-        <option class="" value="">Tất cả</option>
-        <option class="" value="Kiosk">Kiosk</option>
-        <option value="Display counter">Display counter</option>
-    </select>
-</label>
-  <img class="imgdrop2" src="img/fi_chevron-down.png" alt="">
+  <img class="imgnumber2" src="img/fi_chevron-down.png" alt="">
+  <img class="imgnumber3" src="img/fi_chevron-down.png" alt="">
+  <p class="text86">Chọn thời gian</p>
+  <div class="date_number">
+    <div class="service_date_first">
+        <input type="date" style="text-align: right;border: 0;" required pattern="dd-mm-yyyy" >
+      </div>
+      <div class="service_date_hindmost1">
+        <input type="date" style="text-align: right;border: 0;">
+      </div>
+  </div>
   <p class="text26">Từ khóa</p>
   <input class="inputdevice" placeholder="Nhâp từ khóa">
   <img class="imgsearch_device" src="img/fi_search.png" alt="">
   <button class="btnaddevice" >
-    <a href="{{ route('device.add') }} ">
+    <a href="{{ route('number.add') }} ">
         <img class="imgbtnaddevice" src="img/add-square.png" alt="">
     </a>
     <p class="text28">Thêm thiêt bị</p>
@@ -32,19 +53,15 @@
   <div class="girdevice">
     <table class="tabledevice w3-table-all " >
         <tr  class="th w3-light-grey">
-          <th>Mã thiêt bị</th>
-          <th>Tên thiết bị</th>
-          <th>Địa chỉ IP</th>
-          <th class="th">  Trạng thái hoạt động</th>
-          <th class="th">Trạng thái kết nội</th>
-          <th>Dịch vụ sử dụng</th>
-          <th> </th>
+          <th>STT</th>
+          <th class="th">Tên Khách hàng</th>
+          <th class="th">Tên dịch vụ</th>
+          <th class="th"> Thời gian câp</th>
+          <th class="th"> Hạn sử dụng</th>
+          <th class="th">Trạng thái  </th>
+          <th class="th">Nguồn cấp</th>
           <th> </th>
         </tr>
-
-        <tr>
-        </tr>
-
         <tr>
           <td>KIO_01</td>
           <td>Kiosk</td>
@@ -74,7 +91,7 @@
           @endif
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
-          <td><a href="{{ route('device.detail') }}">Chi tiết</a></td>
+          <td><a href="{{ route('number.information') }}">Chi tiết</a></td>
           <td><a href="/">Cập nhật</a></td>
         </tr>
         <tr>
@@ -85,7 +102,7 @@
           <td>Mất kết nối</td>
 
           <td class=""><div class="td">khách tim mạch khám mắt ssssssssssssssssssssssssssssss</div><a href="/">Xem thêm</a> </td>
-          <td><a href="/">Chi tiết</a></td>
+          <td><a href="{{ route('number.information') }}">Chi tiết</a></td>
           <td><a href="/">Cập nhật</a></td>
         </tr>
         <tr>
@@ -158,6 +175,4 @@
       </table>
   </div>
 </div>
-
-
 @endsection
